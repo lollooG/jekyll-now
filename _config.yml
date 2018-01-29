@@ -1,52 +1,64 @@
-# Dependencies
-markdown:	redcarpet
-pygments:	true
+# Site wide configuration
 
-# Permalinks
-permalink:	/blog/:title
+title: "My Site"
+description: "This is a description of my awesome site."
+logo: # 120x120 px default image used for Twitter summary card
+teaser: # 400x250 px default teaser image used in image archive grid
+locale: en
+url:
+feed:
+  path: atom.xml
 
-# Setup
-title:		Thinny
-tagline:	'blog'
-description:	'My personal blog.'
-url:		http://camporez.com
+# Jekyll configuration
 
-author:
-  name:		'Ian Camporez Brunelli'
-  url:		https://google.com/+IanCamporezBrunelli
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+kramdown:
+  toc_levels: 1..2
+highlighter: rouge
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
 
-paginate:	5
 
-# Custom vars
-icon:		/assets/images/icon.png
-cover:		/assets/images/cover.jpg
+# Site owner
+owner:
+  name:
+  email:
+  twitter:
+  google:
+    ad-client:
+    ad-slot:
+  bio:
+  avatar: bio-photo.jpg # 160x160 px image for author byline
+  disqus-shortname:
 
-social:
-  - icon:	twitter
-    url:	https://twitter.com/iancamporez
-    desc:	Follow me on twitter
 
-  - icon:	github
-    url:	https://github.com/camporez
-    desc:	Fork me on github
-
-  - icon:	googleplus-alt
-    url:	https://google.com/+IanCamporezBrunelli
-    desc:	Add me on google+
-
-  - icon:	feed
-    url:	http://camporez.com/atom.xml
-    desc:	Subscribe to my feed
-    
-menu:
-  - title:	Home
-    url:	/
-    
-  - title:	About
-    url:	/about
-    
-copyright:
-  author:	Camporez
-  url:		http://camporez.com
-  type_title:	Some rights reserved
-  type_url:	http://creativecommons.org/licenses/by-nc/2.5
+include:
+  - .htaccess
+exclude:
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp

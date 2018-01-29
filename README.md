@@ -1,18 +1,17 @@
-#Thinny - The Infinite's Nymphet
+# Skinny Bones Jekyll Starter
 
-##About
-Thinny is a beautiful theme for [Jekyll](http://jekyllrb.com/).
+Just a little something I'm using to jump start a site refresh. I like to think of it as a starter for building your own Jekyll site. I purposely keep the styling minimal and bare to make it easier to add your own flare and markup.
 
-(if you're looking for the [Ghost](http://ghost.org) release of the theme, check [this page](https://github.com/camporez/Thinny/releases/tag/v0.3-alexandra))
+I'm currently using a variation of it on my personal website [Made Mistakes](http://mademistakes.com) with some modifications. To learn more about how to use the theme and install it check out the [Skinny Bones demo](http://mmistakes.github.io/skinny-bones-jekyll/) (*work in progress*).
 
-##Demo
-[![Preview image](https://f.cloud.github.com/assets/5755892/2002329/bdb5a052-85ed-11e3-8e00-a892910b6917.png)](http://camporez.com/)
-The above image is a preview of how the post header looks on Thinny.
+![screenshot of Skinny Bones](http://mmistakes.github.io/skinny-bones-jekyll/images/skinny-bones-theme-feature.jpg)
 
-A live demo is available [on my personal blog](http://camporez.com/).
+---
 
-##More information
-Read the blog post [here](http://camporez.com/blog/thinny-2/).
+## Notable Features
 
-##Reporting issues
-You can report an issue or request a feature [here](http://github.com/camporez/camporez.github.io/issues) or on [twitter](http://twitter.com/iancamporez).
+* Jekyll 3.x and GitHub Pages compatible.
+* Stylesheet built using Sass.
+* Data files for easier customization of the site navigation/footer and for supporting multiple authors.
+* Optional Disqus comments, table of contents, social sharing links, and Google AdSense ads.
+* And more.
