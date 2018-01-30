@@ -1,38 +1,35 @@
 ---
 layout: default
 ---
-<div class="col-md-9 col-content">
-    {% for post in paginator.posts %}
-      {% include posts.html%}
-    {% endfor %}
-    <nav>
-        <ul class="pagination pagination-posts">
-          {% if paginator.total_pages > 1 %}
-              {% if paginator.previous_page %}
-                <li>
-                  <a href="{{ paginator.previous_page_path | prepend: site.url}}" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-                </li>
-              {% endif %}
-              {% for page in (1..paginator.total_pages) %}
-                  {% if page == paginator.page %}
-                    <li class="active"><span>{{ page }}</span></li>
-                  {% elsif page == 1 %}
-                    <li><a href="{{ site.url }}">{{ page }}</a></li>
-                  {% else %}
-                    <li><a href="{{ site.url}}/page/{{ page }}">{{ page }}</a></li>
-                  {% endif %}
-                  {% endfor %}
-              {% if !paginator.next_page %}
-                  <li>
-                    <a href="{{ paginator.next_page_path | prepend: site.url}}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-                  </li>
-              {% endif %}
+
+{% for post in paginator.posts %}
+<div class="article">
+    <div class="well">
+        <h1><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h1>
+        {% if site.comments and post.comments %}
+            {% if site.disqus != '' %}
+            <p class="author"><a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread" data-disqus-identifier="{{ post.url | slugify }}">Comments</a></p>
+            {% elsif site.isso != '' %}
+            <p class="author"><a href="{{ site.baseurl }}{{ post.url }}{{ site.isso_suffix }}#isso-thread">Comments</a></p>
             {% endif %}
-        </ul>
-    </nav>
+        {% endif %}
+        <div class="content">
+            {{ post.content }}
+        </div>
+    </div>
 </div>
-<div class="col-md-3 col-sidebar">
-    {% include author.html%}
-    {% include categories.html%}
-    {% include tags.html%}
+{% endfor %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <a class="btn btn-default" href="{{ site.baseurl}}/index.html" class="previous">Newer</a>
+      {% else %}
+        <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.previous_page }}" class="previous">Newer</a>
+      {% endif %}
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.next_page }}" class="next">Older</a>
+  {% endif %}
 </div>
