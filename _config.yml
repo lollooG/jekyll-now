@@ -2,7 +2,7 @@ full_rebuild: true
 name: Jiang G personal Website
 description: My journey to programming and animation
 destination: jekyllbuild
-url: #place url
+url: https://lolloog.github.io/
 baseurl: #place folder name if site is served in subfolder
 permalink: /:title/
 paginate: 8
@@ -17,10 +17,7 @@ media_folder: /media/compressed
 author_default_avatar: /profile-pic.jpg
 
 twitter: "#"
-facebook: false
 youtube: "#"
-vimeo: false
-soundcloud: false
 
 encoding: utf-8
 defaults:
