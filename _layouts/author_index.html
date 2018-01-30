@@ -1,5 +1,5 @@
 ---
-layout: index-full
+layout: index
 ---
 {% assign the_author = site.data.authors | where: 'id', page.author %}
 {% for author in the_author %}
@@ -12,7 +12,7 @@ layout: index-full
         {% endif %}
     </div>
     <div class="info">
-        <h2 class="author-name">
+        <h2 class="author_name">
             {% if author.name %}
                 {{ author.name }}
             {% else %}

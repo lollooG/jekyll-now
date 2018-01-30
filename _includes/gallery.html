@@ -1,9 +1,10 @@
-<!-- simple gallery, where each of the files is just put after one another -->
 <div class="gallery">
-    {% for gallery in page.gallery %}
-        {% for image in gallery.images %}
+    {% for gallery in site.data.galleries %}
+        {% if gallery.id == page.gallery-id %}
+            {% for image in gallery.images %}
             <b>{{ image.alttext }}</b>
-            <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ image.filename }}" alt="{{ image.alttext }}">
-        {% endfor %}
-    {% endfor %}
+            <img src="{{ gallery.imagefolder | prepend: site.baseurl | replace: '//', '/' }}/{{ image.filename }}" alt="{{ image.alttext }}">
+{% endfor %}
+{% endif %}
+{% endfor %}
 </div>

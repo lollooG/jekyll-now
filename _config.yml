@@ -1,23 +1,24 @@
-full_rebuild: true
-name: Jiang G personal Website
-description: My journey to programming and animations
-destination: jekyllbuild
-url: https://lolloog.github.io/
+name: Twister
+description: a powerful jekyll theme
+url: #place url
 baseurl: #place folder name if site is served in subfolder
 permalink: /:title/
 paginate: 8
 paginate_path: /page/:num/
-infinite_scroll: true #change to false if you want to use pagination
-gems: [jekyll-paginate]
 tag_dir: /tag
 category_dir: /category
 author_dir: /author
 author_title_prefix: 'Posted by '
-media_folder: /media/compressed
+media_folder: /img
 author_default_avatar: /profile-pic.jpg
-
+tumblr: "#"
+pinterest: "#"
+instagram: "#"
 twitter: "#"
+facebook: "#"
 youtube: "#"
+vimeo: "#"
+soundcloud: "#"
 
 encoding: utf-8
 defaults:
@@ -26,7 +27,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "post-material-sidebar-left"
+      layout: "post"
       type: "standard"
       homedisplay: "featimg"
 markdown: kramdown
@@ -34,7 +35,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 relative_permalinks: false
-exclude: [.git, .gitignore, sass, .sass-cache, package.json, gruntfile.js, node_modules, README.md, jekyllbuild]
+exclude: [.git, .gitignore, sass, .sass-cache, package.json, gruntfile.js, node_modules, README.md, documentation]
 
 # prose.io configurations
 prose:
@@ -54,7 +55,7 @@ prose:
             - name: "with sidebar"
               value: "post"
             - name: "full width"
-              value: "post-full"
+              value: "post_full"
       - name: "author"
         field:
           element: "text"
@@ -116,3 +117,4 @@ prose:
           label: "YouTube Video ID"
           help: "Set post type to youtube in order for this to work. Do not set featured image, as the youtube video thumbnail will be used"
           type: "text"
+

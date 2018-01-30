@@ -1,15 +1,17 @@
-@import "toolbox/all";
-@import "base/settings";
-@import "base/typography";
+@import "modules/all";
+@import "partials/base";
 
 $fourtothree: 1460px;
 $threetotwo: 775px;
 $twotoone: 530px;
 
-.articles,
-.jscroll-inner {
-    @include flexbox(row, wrap, flex-start, flex-start);
-    width: 100%;
+.articles{
+    @include flexbox(row, wrap, flex-start, stretch);
+    width: 75%;
+
+    @media screen and (max-width: $sidebarcollapse){
+        width: 100%;
+    }
 
     @media screen and (max-width: $twotoone){
         justify-content: center;
@@ -22,18 +24,12 @@ $twotoone: 530px;
             @include rowMachine(3, 1%, 25px);
         }
 
-        @media screen and (max-width: $threetotwo) and (min-width: $twotoone + 1){
+        @media screen and (max-width: $threetotwo){
             @include rowMachine(2, 3%, 25px);
         }
 
         @media screen and (max-width: $twotoone){
-            width: 100%;
-            margin-left: 0;
-            margin-bottom: 25px;
+            @include rowMachine(1, 0, 25px);
         }
     }
-}
-
-#classic {
-    opacity: .7;
 }

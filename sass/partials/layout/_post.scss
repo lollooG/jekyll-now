@@ -1,16 +1,24 @@
-.content-container{
-    width: 100%;
+.content_container{
+    width: 75%;
 
-    .post-title{
-        color: $title-color;
+    @media screen and (max-width: $sidebarcollapse){
+        width: 100%;
+    }
+
+    .full &{
+        width: 100%;
+    }
+
+    .post_title{
+        color: $title_color;
         padding: 10px 0;
     }
 
     .meta{
-        padding: 5px 0;
-        margin-bottom: 5px;
-        border-bottom: $line;
-        color: $secondary-text;
+        margin: 20px 0;
+        padding: 10px 0;
+        border-top: $box_line;
+        border-bottom: $box_line;
     }
 
     .featsection{
@@ -18,21 +26,36 @@
     }
 
     .catsandtags{
+        margin: 20px 0;
         padding: 10px 0;
+        border-top: $box_line;
+        border-bottom: $box_line;
         line-height: 2.5;
-        color: $secondary-text;
-        
+
         .category,
         .tags{
             .name{
-                font-weight: 500;
+                font-weight: $medium;
+                padding: 5px;
             }
+        }
+
+        a{
+            padding: 5px;
+            background: $box_bg;
+            border: $box_line;
         }
     }
 
-    .post-nav{
-        @include clearfix();
+    .post_nav{
+        @extend %clearfix;
         margin: 20px 0;
+
+        a{
+            padding: 5px 10px;
+            border: $line;
+            background: $white;
+        }
 
         .prev{
             float: left;
