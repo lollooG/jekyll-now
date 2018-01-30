@@ -1,6 +1,6 @@
 full_rebuild: true
-name: Gridster
-description: the material experience for jekyll
+name: Jiang G personal Website
+description: My journey to programming and animation
 destination: jekyllbuild
 url: #place url
 baseurl: #place folder name if site is served in subfolder
@@ -22,7 +22,6 @@ twitter: "#"
 facebook: "#"
 youtube: "#"
 vimeo: "#"
-soundcloud: "#"
 
 encoding: utf-8
 defaults:
