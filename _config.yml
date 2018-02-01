@@ -1,7 +1,7 @@
 name: Journey through image and programming
 description: My personal blog, serve as a demo
 url: https://lolloog.github.io/
-baseurl: https://lolloog.github.io/
+baseurl: #
 permalink: /:title/
 paginate: 8
 paginate_path: /page/:num/
