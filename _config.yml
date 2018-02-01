@@ -82,8 +82,6 @@ prose:
               value: "audio"
             - name: "YouTube"
               value: "youtube"
-            - name: "Vimeo"
-              value: "vimeo"
       - name: "homedisplay"
         field:
           element: "select"
