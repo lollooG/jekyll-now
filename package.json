@@ -12,8 +12,6 @@
     "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-sass": "^0.14.2",
-    "grunt-shell": "^1.1.1",
-    "node-sass": "^4.7.2",
-    "rebuild-node-sass": "^1.1.0"
+    "grunt-shell": "^1.1.1"
   }
 }

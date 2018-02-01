@@ -8,8 +8,14 @@
     top: 0px;
     left: 0px;
     width: 100%;
-    background: $head_bg;
     z-index: 20;
+
+    background:{
+        image: $header_bg-img;
+        attachment: fixed;
+        position: center;
+        repeat: repeat;
+    }
 
     @media screen and (min-width: $from_full_to_noslogan){
         .ts_no_slogan,
@@ -38,8 +44,8 @@
         top: 0;
         left: 0;
         transition: .3s all ease-in-out;
-        padding: 110px 10px; // adjust to change header height
-        box-sizing: border-box;
+        padding: 80px 10px; // adjust to change header height
+        
         overflow: hidden;
 
         @media screen and (max-width: $from_noslogan_to_icon){
@@ -47,20 +53,15 @@
         }
 
         .logo {
-            @include paddinghack(100%, 127.27984, 28.97019); // use your logo dimensions here
-            position: absolute;
-            top: 50%;
+            position: relative;
+            top: 10%;
             left: 50%;
             transform: translate(-50%, -50%) scale(1);
             transition: .3s all ease-in-out;
             height: 100px;
             display: block;
-            max-width: 750px;
-            width: 50%;
-
-            svg{
-                @extend %paddinghack;
-            }
+            max-width: 500px;
+            width: 50%;            
         }
 
         .title{
@@ -73,12 +74,28 @@
             text-transform: uppercase;
             transition: .3s all ease-in-out;
         }
+
+        .label_font{
+        	font: Helvetica;
+		    font-size:150px;
+		    font-weight: bold;
+		    line-height:125%;
+		    text-transform: uppercase;
+		    letter-spacing: -20px;
+		    transition: .3s all ease;
+		}
     }
 
     // header style on scroll
     .shrink{
         padding: 0px 10px;
         box-sizing: border-box;
+
+        width: 0;
+		height: 0;    
+		max-width: 0;
+		max-height: 0;
+        padding: 0px;
 
         .logo{
             transform: translate(-50%, -50%) scale(0);
