@@ -10,7 +10,7 @@ category: [maya]
 Creating Stairs is one of the most tedious task in 3D modeling. There are a lot of repetition in the modeling and everything has been very precise.
 In the end, I found out that the fastest way of building stairs is first build a curve, and than extrude along the curve to build handrails and other supporting structures. This is by far the fastest way of building stairs.
 
-![result overview]({{site.url}}/img/extu_idea/rebuild_crv.jpg ){: .center-image }
+![result overview]({{site.url}}/img/extu_idea/extu_crv.jpg ){: .center-image }
 
 There is also some experience I gained when using the extrude along curve Maya function. At first, I found the rebuild curve function is very useful when I was trying to preserve bend volume. See orange circles. The uniform rebuild curve has the best bend compare to the other two curves. But after closer examination, I believe the original curve gives the best result. Because it concentrate the division near the bend. And the only reason it failed at the orange bend is because I used only 3 points to define the bend. When I use 4 point to define the green bend. The resulting extrude gives much cleaner result. The concentration of divisions is defined by the density of my input control points. So what exactly did this experiment tell us?
 

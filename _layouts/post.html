@@ -29,7 +29,7 @@
                             {% endif %}
                         {% elsif page.type == "image" or page.type == "gallery" %}
                             {% if page.featimg %}
-                                <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">
+                                <img class="post_img" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">
                             {% endif %}
                         {% elsif page.type == "audio" %}
                             {% if page.audio-embed %}
