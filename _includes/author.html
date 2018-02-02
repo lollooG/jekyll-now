@@ -9,7 +9,16 @@
     <span class="author">Posted by
         {% assign the_author = site.data.authors | where: 'id', author %}
         {% for author in the_author %}
-            <a href="{{ site.author_dir | prepend: site.baseurl | replace: '//', '/' }}/{{ author.id }}">
+            <!--    original code, not working with the new github page 
+                <a href="{{ site.author_dir | prepend: site.baseurl | replace: '//', '/' }}/{{ author.id }}">
+                    {% if author.name %}
+                        {{ author.name }}
+                    {% else %}
+                        {{ author.id }}
+                    {% endif %}
+                </a>
+            -->
+            <a href="{{ site.baseurl | replace: '//', '/' }}/aboutme">
                 {% if author.name %}
                     {{ author.name }}
                 {% else %}

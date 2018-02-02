@@ -3,4 +3,4 @@ layout: page
 title: About Me
 ---
 
-test
+{% include authorme.html %}
