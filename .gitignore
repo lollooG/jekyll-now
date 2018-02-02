@@ -4,6 +4,6 @@
 /bower_components/
 /node_modules/
 /.brackets.json
-/jekyllbuild/
+# /jekyllbuild/
 /documentation/node_modules/
-/documentation/jekyllbuild/
+# /documentation/jekyllbuild/
