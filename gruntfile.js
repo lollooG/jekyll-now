@@ -60,8 +60,8 @@ module.exports = function(grunt) {
             },
             pages: {
                 options: {
-                    remote: 'https://github.com/user/reponame.git', // change that
-                    branch: 'gh-pages' // adjust here
+                    remote: 'https://github.com/lollooG/lollooG.github.io.git', // change that
+                    branch: 'master' // adjust here
                 }
             }
         },
