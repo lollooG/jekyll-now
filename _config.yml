@@ -13,7 +13,7 @@ media_folder: /img
 author_default_avatar: /profile-pic.jpg
 
 # Gems
-plugins: [jekyll-paginate]
+gems: [jekyll-paginate]
 
 twitter: "#"
 youtube: "#"
