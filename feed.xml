@@ -1,27 +1,314 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<channel>
-		<title>{{ site.name | xml_escape }}</title>
-		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-		<link>{{ site.url }}</link>
-		<atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-		{% for post in site.posts limit:100 %}
+		<title>Journey through image and programming</title>
+		<description>My personal blog, serve as a demo</description>
+		<link>http://localhost:4000</link>
+		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+		
 			<item>
-				<title>{{ post.title | xml_escape }}</title>
-				{% if post.author.name %}
-					<dc:creator>{{ post.author.name | xml_escape }}</dc:creator>
-				{% endif %}
-				{% if post.excerpt %}
-					<description>{{ post.excerpt | xml_escape }}</description>
-				{% else %}
-					<description>{{ post.content | xml_escape }}</description>
-				{% endif %}
-				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-				<link>{{ site.url }}{{ post.url }}</link>
-				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+				<title>Simple Facial Rigging and Walk Cycle Demo</title>
+				
+				
+					<description>&lt;p&gt;I did a quick facial animation and walk cycle with Maya and Renderman.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Wed, 31 Jan 2018 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/walk-demo/</link>
+				<guid isPermaLink="true">http://localhost:4000/walk-demo/</guid>
 			</item>
-		{% endfor %}
+		
+			<item>
+				<title>Convert any photo to seamless texture</title>
+				
+				
+					<description>&lt;p&gt;Overview:
+I wrote a script that run in mayapy. It can convert photos into seamless tile. The quality of the result will obviously depended on the original image. Some images are just not made for seamless texture. The program itself is using a algorithm, minimal error boundary. The algorithm is a variation of another more famous algorithm called, seam curving. Seam curving is covered in most university level computer vision programming classes. It is almost a rite of passage for any programmer in the field of graphic or image editing. And because the algorithm uses dynamic programming. some advance programming courses will also use it as assignment or project.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Wed, 31 Jan 2018 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/sealmess-tex-script/</link>
+				<guid isPermaLink="true">http://localhost:4000/sealmess-tex-script/</guid>
+			</item>
+		
+			<item>
+				<title>Throughts on using geometry as light in Renderman 21</title>
+				
+				
+					<description>&lt;p&gt;In Renderman 21, when people need a self illumination geometry, for example a light bulb filament or a Neon light tube, there are usually 2 way to do that. One is adding value to ‘Grow’ attribute in a standard ‘PxrSurface’. Two is using ‘Pxrblack’, treating the geometry as black body object emitting light.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Wed, 31 Jan 2018 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/renderman-geo-light/</link>
+				<guid isPermaLink="true">http://localhost:4000/renderman-geo-light/</guid>
+			</item>
+		
+			<item>
+				<title>My Custom Module Architect Building Tool</title>
+				
+				
+					<description>&lt;p&gt;I recently came across a Maya plugin: Ninja Dojo, ninja city (aka, Render ready Demo)
+http://www.bk3d.com/Ninja_Dojo/
+https://www.highend3d.com/maya/script/render-ready-demo-for-maya&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Wed, 31 Jan 2018 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/modu-building/</link>
+				<guid isPermaLink="true">http://localhost:4000/modu-building/</guid>
+			</item>
+		
+			<item>
+				<title>My Facial Animation Solution</title>
+				
+				
+					<description>&lt;p&gt;After testing a few different facial animation methods in Maya, I settle down with my own method. The ideal is to combining curved based animation and blendshape based animation, utilizing custom python script to get the best of both worlds.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Wed, 31 Jan 2018 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/facial-anim/</link>
+				<guid isPermaLink="true">http://localhost:4000/facial-anim/</guid>
+			</item>
+		
+			<item>
+				<title>My throughts on extrude along curve</title>
+				
+				
+					<description>&lt;p&gt;Creating Stairs is one of the most tedious task in 3D modeling. There are a lot of repetition in the modeling and everything has been very precise.
+In the end, I found out that the fastest way of building stairs is first build a curve, and than extrude along the curve to build handrails and other supporting structures. This is by far the fastest way of building stairs.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Wed, 31 Jan 2018 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/extrude-curve/</link>
+				<guid isPermaLink="true">http://localhost:4000/extrude-curve/</guid>
+			</item>
+		
+			<item>
+				<title>Audio</title>
+				
+				
+					<description>&lt;p&gt;This audio post is displays without a sidebar and has the iframe set for the index pages, instead of a featured image.&lt;/p&gt;
+
+&lt;p&gt;For the audio post to work, type must be set to audio and the audio-embed filled with an iframe.&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;audio&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;audio-embed&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;lt;iframe width=&quot;100%&quot; height=&quot;450&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/188464611&amp;amp;amp;auto_play=false&amp;amp;amp;hide_related=false&amp;amp;amp;show_comments=true&amp;amp;amp;show_user=true&amp;amp;amp;show_reposts=false&amp;amp;amp;visual=true&quot;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+				
+				<pubDate>Sun, 08 Feb 2015 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/audio/</link>
+				<guid isPermaLink="true">http://localhost:4000/audio/</guid>
+			</item>
+		
+			<item>
+				<title>Gallery</title>
+				
+				
+					<description>&lt;p&gt;Here you’ll find a simple gallery, that just adds all of the images at full-width directly in the post content.&lt;/p&gt;
+
+&lt;p&gt;Galleries are defined in a data-sheet, set type and gallery-id in front matter and include &lt;code class=&quot;highlighter-rouge&quot;&gt;gallery.html&lt;/code&gt; within the content.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;_datagalleriesyml&quot;&gt;_data/galleries.yml&lt;/h6&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;gallery&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;imagefolder&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/img/galleries/gallery-standard-post&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;images&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Bloom Flat&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;2.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Bloom&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;3.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Blossom in a Star&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;4.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Blossom&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;5.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Bubbly Bloom&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;6.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Rays of Gold&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;7.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Exotic&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;8.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Filled out&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;front-matter&quot;&gt;front matter&lt;/h6&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;gallery&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;gallery-id&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;gallery&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;post-content&quot;&gt;post content&lt;/h6&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;gallery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;gallery&quot;&gt;
+    
+        
+            
+            &lt;b&gt;Bloom Flat&lt;/b&gt;
+            &lt;img src=&quot;/img/galleries/gallery-standard-post/1.jpg&quot; alt=&quot;Bloom Flat&quot; /&gt;
+
+            &lt;b&gt;Bloom&lt;/b&gt;
+            &lt;img src=&quot;/img/galleries/gallery-standard-post/2.jpg&quot; alt=&quot;Bloom&quot; /&gt;
+
+            &lt;b&gt;Blossom in a Star&lt;/b&gt;
+            &lt;img src=&quot;/img/galleries/gallery-standard-post/3.jpg&quot; alt=&quot;Blossom in a Star&quot; /&gt;
+
+            &lt;b&gt;Blossom&lt;/b&gt;
+            &lt;img src=&quot;/img/galleries/gallery-standard-post/4.jpg&quot; alt=&quot;Blossom&quot; /&gt;
+
+            &lt;b&gt;Bubbly Bloom&lt;/b&gt;
+            &lt;img src=&quot;/img/galleries/gallery-standard-post/5.jpg&quot; alt=&quot;Bubbly Bloom&quot; /&gt;
+
+            &lt;b&gt;Rays of Gold&lt;/b&gt;
+            &lt;img src=&quot;/img/galleries/gallery-standard-post/6.jpg&quot; alt=&quot;Rays of Gold&quot; /&gt;
+
+            &lt;b&gt;Exotic&lt;/b&gt;
+            &lt;img src=&quot;/img/galleries/gallery-standard-post/7.jpg&quot; alt=&quot;Exotic&quot; /&gt;
+
+            &lt;b&gt;Filled out&lt;/b&gt;
+            &lt;img src=&quot;/img/galleries/gallery-standard-post/8.jpg&quot; alt=&quot;Filled out&quot; /&gt;
+
+
+
+&lt;/div&gt;
+</description>
+				
+				<pubDate>Fri, 06 Feb 2015 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/gallery/</link>
+				<guid isPermaLink="true">http://localhost:4000/gallery/</guid>
+			</item>
+		
+			<item>
+				<title>Full Width Post</title>
+				
+				
+					<description>&lt;p&gt;a standard post displayed at full-width, only requires a layout, variable.
+The featured image will be added at the beginning of the content, but not above it, as in an image post.&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post_full&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+				
+				<pubDate>Thu, 05 Feb 2015 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/standard-full/</link>
+				<guid isPermaLink="true">http://localhost:4000/standard-full/</guid>
+			</item>
+		
+			<item>
+				<title>Gallery Alternative</title>
+				
+				
+					<description>&lt;p&gt;An alternative to the simple gallery would be this version, which displays the post ins a lightbox.
+The setup basically is the same, the include makes all the difference.&lt;/p&gt;
+
+&lt;p&gt;Galleries are defined in a data-sheet, set type and gallery-id in front matter and include &lt;code class=&quot;highlighter-rouge&quot;&gt;gallery_lightbox.html&lt;/code&gt; within the content.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;_datagalleriesyml&quot;&gt;_data/galleries.yml&lt;/h6&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;gallery&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;imagefolder&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/img/galleries/gallery-standard-post&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;images&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Bloom Flat&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;2.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Bloom&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;3.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Blossom in a Star&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;4.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Blossom&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;5.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Bubbly Bloom&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;6.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Rays of Gold&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;7.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Exotic&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;8.jpg&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;alttext&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Filled out&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;front-matter&quot;&gt;front matter&lt;/h6&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post_full&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;gallery&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;gallery-id&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;gallery&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;post-content&quot;&gt;post content&lt;/h6&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;gallery_lightbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;masonry&quot;&gt;
+    
+        
+            
+                &lt;a href=&quot;/img/galleries/gallery-standard-post/1.jpg&quot; data-imagelightbox=&quot;f&quot; class=&quot;noline&quot;&gt;
+                    &lt;img src=&quot;/img/galleries/gallery-standard-post/1.jpg&quot; alt=&quot;Bloom Flat&quot; /&gt;
+                &lt;/a&gt;
+            
+                &lt;a href=&quot;/img/galleries/gallery-standard-post/2.jpg&quot; data-imagelightbox=&quot;f&quot; class=&quot;noline&quot;&gt;
+                    &lt;img src=&quot;/img/galleries/gallery-standard-post/2.jpg&quot; alt=&quot;Bloom&quot; /&gt;
+                &lt;/a&gt;
+            
+                &lt;a href=&quot;/img/galleries/gallery-standard-post/3.jpg&quot; data-imagelightbox=&quot;f&quot; class=&quot;noline&quot;&gt;
+                    &lt;img src=&quot;/img/galleries/gallery-standard-post/3.jpg&quot; alt=&quot;Blossom in a Star&quot; /&gt;
+                &lt;/a&gt;
+            
+                &lt;a href=&quot;/img/galleries/gallery-standard-post/4.jpg&quot; data-imagelightbox=&quot;f&quot; class=&quot;noline&quot;&gt;
+                    &lt;img src=&quot;/img/galleries/gallery-standard-post/4.jpg&quot; alt=&quot;Blossom&quot; /&gt;
+                &lt;/a&gt;
+            
+                &lt;a href=&quot;/img/galleries/gallery-standard-post/5.jpg&quot; data-imagelightbox=&quot;f&quot; class=&quot;noline&quot;&gt;
+                    &lt;img src=&quot;/img/galleries/gallery-standard-post/5.jpg&quot; alt=&quot;Bubbly Bloom&quot; /&gt;
+                &lt;/a&gt;
+            
+                &lt;a href=&quot;/img/galleries/gallery-standard-post/6.jpg&quot; data-imagelightbox=&quot;f&quot; class=&quot;noline&quot;&gt;
+                    &lt;img src=&quot;/img/galleries/gallery-standard-post/6.jpg&quot; alt=&quot;Rays of Gold&quot; /&gt;
+                &lt;/a&gt;
+            
+                &lt;a href=&quot;/img/galleries/gallery-standard-post/7.jpg&quot; data-imagelightbox=&quot;f&quot; class=&quot;noline&quot;&gt;
+                    &lt;img src=&quot;/img/galleries/gallery-standard-post/7.jpg&quot; alt=&quot;Exotic&quot; /&gt;
+                &lt;/a&gt;
+            
+                &lt;a href=&quot;/img/galleries/gallery-standard-post/8.jpg&quot; data-imagelightbox=&quot;f&quot; class=&quot;noline&quot;&gt;
+                    &lt;img src=&quot;/img/galleries/gallery-standard-post/8.jpg&quot; alt=&quot;Filled out&quot; /&gt;
+                &lt;/a&gt;
+            
+        
+    
+&lt;/div&gt;
+</description>
+				
+				<pubDate>Sun, 01 Feb 2015 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/gallery-alt/</link>
+				<guid isPermaLink="true">http://localhost:4000/gallery-alt/</guid>
+			</item>
+		
 	</channel>
 </rss>
