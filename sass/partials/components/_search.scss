@@ -18,7 +18,8 @@ body.overflow{
     input[type="search"] {
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 70%;
+	width: 40%;
         transform: translate(-50%, -50%);
         color: $so_color;
         background: transparent;
