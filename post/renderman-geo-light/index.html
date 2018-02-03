@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+<title>Journey through image and programming - Throughts on using geometry as light in Renderman 21 </title>
+
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:500,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" id="switch_style" href="/css/grid.css">
+<link rel="alternate" type="application/rss+xml" title="Journey through image and programming" href="http:/localhost:4000/feed.xml">
+
+    </head>
+
+    <body>
+        <header class="head">
+            <div class="row" >
+    <a href="/" class="logo noline">
+        <svg version="1.1" viewBox="0 0 500 240" class="ts-full">
+            <g transform="translate(-220,-330)">
+                <text x="200" y="550" class="gridster">
+                    <tspan x="235.15662" y="477.12143">Welcome</tspan>
+                </text>
+        		
+            </g>
+            <g transform="translate(-100,-340)">
+				<text x="400" y="0" class="slogan">
+        			<tspan x="304.80173" y="512.31683">to my website</tspan>
+        		</text>
+            </g>
+        </svg>
+    
+    </a>
+</div>
+
+            <section class="main_menu">
+    <div class="content">
+        <nav id="menu">
+            <a class="toggle_link noline"><i class="fa fa-close fa-lg"></i></a>
+            <ul>
+                <li>
+                    <a href="/welcome">Welcome</a>
+                </li>
+                <li>
+                    <a href="/feature">Featured</a>
+                </li>
+                
+                <li class="parent"><a href="#">View Category</a>
+                    <ul>
+                        
+                            <li><a href="/category/image" >image(2)</a></li>
+                        
+                            <li><a href="/category/standard" >standard(1)</a></li>
+                        
+                            <li><a href="/category/audio" >audio(1)</a></li>
+                        
+                            <li><a href="/category/maya" >maya(1)</a></li>
+                        
+                            <li><a href="/category/rigging" >rigging(1)</a></li>
+                        
+                            <li><a href="/category/script" >script(2)</a></li>
+                        
+                            <li><a href="/category/featuring" >featuring(3)</a></li>
+                        
+                            <li><a href="/category/renderman" >renderman(1)</a></li>
+                        
+                            <li><a href="/category/demo" >demo(1)</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">View Tag</a>
+                    <ul>
+                        
+                            <li><a href="/tag/gallery" >gallery(2)</a></li>
+                        
+                            <li><a href="/tag/image" >image(2)</a></li>
+                        
+                            <li><a href="/tag/text" >text(1)</a></li>
+                        
+                            <li><a href="/tag/music" >music(1)</a></li>
+                        
+                            <li><a href="/tag/soundcloud" >soundcloud(1)</a></li>
+                        
+                            <li><a href="/tag/modeling" >modeling(4)</a></li>
+                        
+                            <li><a href="/tag/maya" >maya(5)</a></li>
+                        
+                            <li><a href="/tag/rigging" >rigging(2)</a></li>
+                        
+                            <li><a href="/tag/animation" >animation(1)</a></li>
+                        
+                            <li><a href="/tag/scripting" >scripting(1)</a></li>
+                        
+                            <li><a href="/tag/renderman" >renderman(2)</a></li>
+                        
+                            <li><a href="/tag/lighting" >lighting(1)</a></li>
+                        
+                            <li><a href="/tag/texture" >texture(1)</a></li>
+                        
+                            <li><a href="/tag/script" >script(1)</a></li>
+                        
+                            <li><a href="/tag/youtube" >youtube(1)</a></li>
+                        
+                            <li><a href="/tag/rendering" >rendering(1)</a></li>
+                        
+                            <li><a href="/tag/VFX" >VFX(1)</a></li>
+                        
+                    </ul>
+                </li>
+
+                <li>
+                    <!--    original code, not working with the new github page 
+                        <a href="/author/lolloo">About me</a>  
+                    -->
+                    <a href="/aboutme">About me</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="iconnav">
+            <ul>
+                <li class="sicon">
+                    <a href='#search'><i class='fa fa-search'></i></a>
+                </li>
+                
+                
+
+                
+
+                
+                    <li class="social">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    </li>
+                
+
+                
+
+                
+                    <li class="social">
+                        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+                    </li>
+                
+
+                
+
+                
+            </ul>
+        </nav>
+        <a href='#menu' class="toggle_link noline">
+            <i class="fa fa-navicon"></i>
+        </a>
+    </div>
+</section>
+
+        </header>
+        <div id="search">
+    <form role="search" id="searchform">
+        <input type="search" placeholder="Search"/>
+    </form>
+</div>
+
+        <section class="margin">
+            <div class="content">
+                <div class="sidebar">
+    <div class="widget">
+        <h3 class="title">Categories</h3>
+        <ul class="category_list">
+            
+            
+                
+                    
+                        <li><a href="/category/image" style="font-size: .7em">image (2) </a></li>
+                    
+                
+                    
+                        <li><a href="/category/standard" style="font-size: .7em">standard (1) </a></li>
+                    
+                
+                    
+                        <li><a href="/category/audio" style="font-size: .7em">audio (1) </a></li>
+                    
+                
+                    
+                        <li><a href="/category/maya" style="font-size: .7em">maya (1) </a></li>
+                    
+                
+                    
+                        <li><a href="/category/rigging" style="font-size: .7em">rigging (1) </a></li>
+                    
+                
+                    
+                        <li><a href="/category/script" style="font-size: .7em">script (2) </a></li>
+                    
+                
+                    
+                
+                    
+                        <li><a href="/category/renderman" style="font-size: .7em">renderman (1) </a></li>
+                    
+                
+                    
+                        <li><a href="/category/demo" style="font-size: .7em">demo (1) </a></li>
+                    
+                
+            
+            
+        </ul>
+    </div>
+    <div class="widget">
+        <h3 class="title">Tags</h3>
+        <ul class="tag_list">
+            
+            
+                
+                    <li><a href="/tag/gallery" style="font-size: .7em">gallery (2) </a></li>
+                
+                    <li><a href="/tag/image" style="font-size: .7em">image (2) </a></li>
+                
+                    <li><a href="/tag/text" style="font-size: .7em">text (1) </a></li>
+                
+                    <li><a href="/tag/music" style="font-size: .7em">music (1) </a></li>
+                
+                    <li><a href="/tag/soundcloud" style="font-size: .7em">soundcloud (1) </a></li>
+                
+                    <li><a href="/tag/modeling" style="font-size: .7em">modeling (4) </a></li>
+                
+                    <li><a href="/tag/maya" style="font-size: .7em">maya (5) </a></li>
+                
+                    <li><a href="/tag/rigging" style="font-size: .7em">rigging (2) </a></li>
+                
+                    <li><a href="/tag/animation" style="font-size: .7em">animation (1) </a></li>
+                
+                    <li><a href="/tag/scripting" style="font-size: .7em">scripting (1) </a></li>
+                
+                    <li><a href="/tag/renderman" style="font-size: .7em">renderman (2) </a></li>
+                
+                    <li><a href="/tag/lighting" style="font-size: .7em">lighting (1) </a></li>
+                
+                    <li><a href="/tag/texture" style="font-size: .7em">texture (1) </a></li>
+                
+                    <li><a href="/tag/script" style="font-size: .7em">script (1) </a></li>
+                
+                    <li><a href="/tag/youtube" style="font-size: .7em">youtube (1) </a></li>
+                
+                    <li><a href="/tag/rendering" style="font-size: .7em">rendering (1) </a></li>
+                
+                    <li><a href="/tag/VFX" style="font-size: .7em">VFX (1) </a></li>
+                
+            
+            
+        </ul>
+    </div>
+
+    <!--    
+        <div class="widget">
+            <h3 class="title">Authors</h3>
+            <ul class="author_list">
+                
+                    <li>
+                        <a href="/author/lolloo">
+                            
+                                Jiang G
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/author/someone">
+                            
+                                Some Person
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/author/person">
+                            
+                                person
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    -->
+</div>
+
+                <div class="content_container">
+                    <article>
+                        
+                            
+                                <img class="post_img" src="/img/renm_geo_light/fin_light.jpg" alt="renm_geo_light/fin_light.jpg">
+                            
+                        
+
+                        <h1 class="post_title">
+                            Throughts on using geometry as light in Renderman 21
+                        </h1>
+                        <div class="meta">
+                            
+
+    <span class="author">Posted by
+        
+        
+            <!--    original code, not working with the new github page 
+                <a href="/author/lolloo">
+                    
+                        Jiang G
+                    
+                </a>
+            -->
+            <a href="/aboutme">
+                
+                    Jiang G
+                
+            </a>
+        
+    </span>
+
+ &bull;
+                            <span class="date">
+                                Published on January 31, 2018
+                            </span>
+                        </div>
+                        
+                        <div class="post_content">
+                            <p>In Renderman 21, when people need a self illumination geometry, for example a light bulb filament or a Neon light tube, there are usually 2 way to do that. One is adding value to ‘Grow’ attribute in a standard ‘PxrSurface’. Two is using ‘Pxrblack’, treating the geometry as black body object emitting light.</p>
+
+<p>The problem with that statement is that the ‘Grow’ lighting method is not really a lighting method. It lack basic lighting attribute, like intensity or exporsure. So I went on and did some experiments on my own. What I found is that, ‘Grow’ attribute is just a ‘PxrConstant’ shader.</p>
+
+<p><img src="http://localhost:4000/img/renm_geo_light/pxrfur_g.jpg" alt="result overview" class="center-image" /></p>
+
+<center>PxrSurface,  Grow_gain = 1.0</center>
+
+<p><img src="http://localhost:4000/img/renm_geo_light/pxrcons.jpg" alt="result overview" class="center-image" /></p>
+
+<center>PxrConstant, gain = 1.0</center>
+
+<p>As you can see, the PxrSurface grow gain and PxrConstant gain is practically the identical. The resulting image is virtually identical. What this proves is that, grow attribute actually don’t grow. It just treat the mesh as a non-reflective surface with a constant color, no matter the direction the render ray arrive. Another thing worth noticing, if one look carefully, the brick wall behind the neon light did light up slightly. Although, the reflection is very dime, it did appear to light up. The reason behind it is because color a pixel is the summation of reflection and refraction. If there are no light, the refraction value will be zero( but to be 100% correct, Renderman have small default global illumination ). But because of reflection, a pixel can still light up. The smooth part of the wall reflect the render ray and the render ray may hit the neon light on the second path or maybe the forth path. Hence, the wall will appear to be light up.</p>
+
+<p>And now, lets compare the result with PxrBlackBody geometry:</p>
+
+<p><img src="http://localhost:4000/img/renm_geo_light/fin_light.jpg" alt="result overview" class="center-image" /></p>
+
+<center>PxrBlack as the only light source</center>
+
+<p>The light from the black body light up the surrounding geometry, including the wall and the floor. As you can see, there is a clear reflection on the wall behind the neon light. More importantly, everything in the room is light up, which means refraction is hard at work.</p>
+
+<p>As a conclusion, there is only one way to using geometry as light, that is ‘PxrBlack’. Both ‘Grow’ and ‘constant color’ are the same way to fake a self-Illuminati. But this don’t mean ‘PxrBlack’ is the better shader, ‘PxrBlack’ will take significantly longer time to render. So if the geometry is not he only light source in the scene, the better choice may just be faking it.</p>
+
+                        </div>
+                        
+                        <div class="catsandtags">
+                            
+                            <p class="category">
+                                <span class="name">Categories:</span>
+                                renderman
+                            </p>
+                            
+                            
+                            <p class="tags">
+                                <span class="name">Tags:</span>
+                                
+                                    <a href="/tag/modeling">modeling</a>
+                                
+                                    <a href="/tag/maya">maya</a>
+                                
+                                    <a href="/tag/renderman">renderman</a>
+                                
+                                    <a href="/tag/lighting">lighting</a>
+                                
+                            </p>
+                            
+                        </div>
+                        
+                    </article>
+                    <div class="post_nav">
+                        
+                        <a class="prev" href="/post/modu-building/"><i class="fa fa-angle-left"></i><span class="short"> prev</span><span class="long">ious post</span></a>
+                        
+                        
+                        <a class="next" href="/post/sealmess-tex-script/"><span class="short">next </span><span class="long">post </span><i class="fa fa-angle-right"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+    <div class="content">
+        <span>&copy; twister</span>
+        <span class="backtotop">back to top</span>
+    </div>
+</footer>
+
+        <script src="/js/build/global.min.js"></script>
+    </body>
+</html>
