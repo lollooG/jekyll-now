@@ -1,0 +1,83 @@
+[
+  
+    {
+      "title"    : "Simple Facial Rigging and Walk Cycle Demo",
+      "category" : "demofeaturing",
+      "tags"     : "youtube, rigging, rendering, modeling, VFX, renderman",
+      "url"      : "/post/walk-demo/",
+      "date"     : "2018-01-31 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Convert any photo to seamless texture",
+      "category" : "scriptfeaturing",
+      "tags"     : "texture, script, maya",
+      "url"      : "/post/sealmess-tex-script/",
+      "date"     : "2018-01-31 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Throughts on using geometry as light in Renderman 21",
+      "category" : "renderman",
+      "tags"     : "modeling, maya, renderman, lighting",
+      "url"      : "/post/renderman-geo-light/",
+      "date"     : "2018-01-31 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "My Custom Module Architect Building Tool",
+      "category" : "scriptfeaturing",
+      "tags"     : "modeling, scripting, maya",
+      "url"      : "/post/modu-building/",
+      "date"     : "2018-01-31 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "My Facial Animation Solution",
+      "category" : "rigging",
+      "tags"     : "rigging, animation, maya",
+      "url"      : "/post/facial-anim/",
+      "date"     : "2018-01-31 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "My throughts on extrude along curve",
+      "category" : "maya",
+      "tags"     : "modeling, maya",
+      "url"      : "/post/extrude-curve/",
+      "date"     : "2018-01-31 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Audio",
+      "category" : "audio",
+      "tags"     : "music, soundcloud",
+      "url"      : "/post/audio/",
+      "date"     : "2015-02-08 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Gallery",
+      "category" : "image",
+      "tags"     : "gallery, image",
+      "url"      : "/post/gallery/",
+      "date"     : "2015-02-06 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Full Width Post",
+      "category" : "standard",
+      "tags"     : "text",
+      "url"      : "/post/standard-full/",
+      "date"     : "2015-02-05 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Gallery Alternative",
+      "category" : "image",
+      "tags"     : "gallery, image",
+      "url"      : "/post/gallery-alt/",
+      "date"     : "2015-02-01 00:00:00 -0800"
+    } 
+  
+]
