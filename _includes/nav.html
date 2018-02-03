@@ -4,29 +4,32 @@
             <a class="toggle_link noline"><i class="fa fa-close fa-lg"></i></a>
             <ul>
                 <li>
-                    <a href="{{ site.baseurl | replace: '//', '/' }}/page">Page</a>
+                    <a href="{{ site.baseurl | replace: '//', '/' }}/welcome">Welcome</a>
                 </li>
                 <li>
-                    <a href="{{ site.baseurl | replace: '//', '/' }}/page-full">Full-Width Page</a>
+                    <a href="{{ site.baseurl | replace: '//', '/' }}/feature">Featured</a>
                 </li>
-                <li>
-                    <a href="{{ site.baseurl | replace: '//', '/' }}/archive">Archive</a>
+                
+                <li class="parent"><a href="#">View Category</a>
+                    <ul>
+                        {% for cate in site.categories %}
+                            <li><a href="{{ site.category_dir | prepend: site.baseurl | replace: '//', '/' }}/{{cate[0]}}" >{{cate[0]}}({{ cate[1].size }})</a></li>
+                        {% endfor %}
+                    </ul>
                 </li>
-                <li>
-                    <a href="{{ site.baseurl | replace: '//', '/' }}/typography">Typography</a>
+                <li class="parent"><a href="#">View Tag</a>
+                    <ul>
+                        {% for tag in site.tags %}
+                            <li><a href="{{ site.tag_dir | prepend: site.baseurl | replace: '//', '/' }}/{{tag[0]}}" >{{tag[0]}}({{ tag[1].size }})</a></li>
+                        {% endfor %}
+                    </ul>
                 </li>
+
                 <li>
                     <!--    original code, not working with the new github page 
                         <a href="{{ site.author_dir | prepend: site.baseurl | replace: '//', '/' }}/lolloo">About me</a>  
                     -->
                     <a href="{{ site.baseurl | replace: '//', '/' }}/aboutme">About me</a>
-                </li>
-                <li class="parent"><a href="#">Drop Example</a>
-                    <ul>
-                        <li><a href="/child1">child</a></li>
-                        <li><a href="/child2">child</a></li>
-                        <li><a href="/child3">child</a></li>
-                    </ul>
                 </li>
             </ul>
         </nav>

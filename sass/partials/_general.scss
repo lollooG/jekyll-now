@@ -25,18 +25,19 @@ h1, h2, h3, h4, h5, h6{
     text-transform: $h_text_transform;
     line-height: 1;
     padding: 10px 0px;
+    line-height: $lineheight_h;
 }
 
 h1{
-    font-size: 2.1em;
+    font-size: 1.3em;
 }
 
 h2{
-    font-size: 1.6em;
+    font-size: 1.2em;
 }
 
 h3{
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 h4{
@@ -152,6 +153,11 @@ code{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.my_contain{
+    vertical-align:bottom;
+    height:100%;
 }
 
 .center-image

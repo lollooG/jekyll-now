@@ -4,7 +4,7 @@ type: image
 featimg: seamless_script/leave_tile_expl.jpg
 title: Convert any photo to seamless texture
 tags: [texture, script, maya]
-category: [script]
+category: [script, featuring]
 ---
 
 Overview:

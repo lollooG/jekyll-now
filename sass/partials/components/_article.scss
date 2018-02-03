@@ -10,6 +10,7 @@ article{
 
         p{
             padding: 0;
+            line-height: $lineheight_p;
         }
     }
 
@@ -17,6 +18,7 @@ article{
     .index & p,
     .index & span{
         padding: 10px;
+        line-height: $lineheight_p;
     }
 
     img{

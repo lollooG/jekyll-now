@@ -9,7 +9,9 @@
                 {% endfor %}
             {% else %}
                 {% for category in category_list %}
-                    <li><a href="{{ site.category_dir | prepend: site.baseurl | replace: '//', '/' }}/{{ category[0] }}">{{ category[0] }}</a></li>
+                    {% if category[0] != "featuring" %}
+                        <li><a href="{{ site.category_dir | prepend: site.baseurl | replace: '//', '/' }}/{{ category[0] }}" style="font-size: .7em">{{ category[0] }} ({{ category[1].size }}) </a></li>
+                    {% endif %}
                 {% endfor %}
             {% endif %}
             {% assign category_list = nil %}
@@ -25,7 +27,7 @@
                 {% endfor %}
             {% else %}
                 {% for tag in tag_list %}
-                    <li><a href="{{ site.tag_dir | prepend: site.baseurl | replace: '//', '/' }}/{{ tag[0] }}">{{ tag[0] }}</a></li>
+                    <li><a href="{{ site.tag_dir | prepend: site.baseurl | replace: '//', '/' }}/{{ tag[0] }}" style="font-size: .7em">{{ tag[0] }} ({{ tag[1].size }}) </a></li>
                 {% endfor %}
             {% endif %}
             {% assign tag_list = nil %}

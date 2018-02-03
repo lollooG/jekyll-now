@@ -4,7 +4,7 @@ type: image
 featimg: modu_building/fin_b.jpg
 title: My Custom Module Architect Building Tool
 tags: [modeling, scripting, maya]
-category: [script]
+category: [script, featuring]
 ---
 
 I recently came across a Maya plugin: Ninja Dojo, ninja city (aka, Render ready Demo)

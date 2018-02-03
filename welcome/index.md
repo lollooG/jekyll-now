@@ -1,7 +1,7 @@
 ---
 layout: page
 featimg: 8.jpg
-title: Page
+title: Welcome to my website
 ---
 ## This is a static page
 

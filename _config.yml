@@ -2,7 +2,7 @@ name: Journey through image and programming
 description: My personal blog, serve as a demo
 url: https://lolloog.github.io/
 baseurl: ""
-permalink: /:title/
+permalink: /post/:title/
 paginate: 8
 paginate_path: /page/:num/
 tag_dir: /tag
@@ -113,14 +113,3 @@ prose:
           label: "YouTube Video ID"
           help: "Set post type to youtube in order for this to work. Do not set featured image, as the youtube video thumbnail will be used"
           type: "text"
-      - name: "featuring"
-        field:
-          element: "select"
-          label: "post featuring"
-          help: "select some post in the featuring tab"
-          options:
-            - name: "True"
-              value: "true"
-            - name: "False"
-              value: "false"
-

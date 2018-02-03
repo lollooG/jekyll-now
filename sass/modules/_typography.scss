@@ -1,3 +1,8 @@
+// Font Weights
+$black: 220;
+$medium: 170;
+$light: 190;
+
 // Font definition
 @font-face {
     font-family: 'Roboto';
@@ -65,10 +70,74 @@
     font-style: normal;
 }
 
-// Font Weights
-$black: 900;
-$medium: 500;
-$light: 300;
+@font-face {
+    font-family: 'ubuntu_mono';
+    src: url('../fonts/ubuntumono-r-webfont.eot');
+    src: url('../fonts/ubuntumono-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntumono-r-webfont.woff') format('woff'),
+         url('../fonts/ubuntumono-r.ttf') format('truetype'),
+         url('../fonts/ubuntumono-r-webfont.svg#ubuntu_monoregular') format('svg');
+    font-weight: $black;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntu_mono';
+    src: url('../fonts/ubuntumono-ri-webfont.eot');
+    src: url('../fonts/ubuntumono-ri-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntumono-ri-webfont.woff') format('woff'),
+         url('../fonts/ubuntumono-ri.ttf') format('truetype'),
+         url('../fonts/ubuntumono-ri-webfont.svg#ubuntu_monoitalic') format('svg');
+    font-weight: $black;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ubuntu_mono';
+    src: url('../fonts/ubuntumono-r-webfont.eot');
+    src: url('../fonts/ubuntumono-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntumono-r-webfont.woff') format('woff'),
+         url('../fonts/ubuntumono-r.ttf') format('truetype'),
+         url('../fonts/ubuntumono-r-webfont.svg#ubuntu_monoregular') format('svg');
+    font-weight: $medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntu_mono';
+    src: url('../fonts/ubuntumono-ri-webfont.eot');
+    src: url('../fonts/ubuntumono-ri-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntumono-ri-webfont.woff') format('woff'),
+         url('../fonts/ubuntumono-ri.ttf') format('truetype'),
+         url('../fonts/ubuntumono-ri-webfont.svg#ubuntu_monoitalic') format('svg');
+    font-weight: $medium;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ubuntu_mono';
+    src: url('../fonts/ubuntumono-r-webfont.eot');
+    src: url('../fonts/ubuntumono-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntumono-r-webfont.woff') format('woff'),
+         url('../fonts/ubuntumono-r.ttf') format('truetype'),
+         url('../fonts/ubuntumono-r-webfont.svg#ubuntu_monoregular') format('svg');
+    font-weight: $light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntu_mono';
+    src: url('../fonts/ubuntumono-ri-webfont.eot');
+    src: url('../fonts/ubuntumono-ri-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntumono-ri-webfont.woff') format('woff'),
+         url('../fonts/ubuntumono-ri.ttf') format('truetype'),
+         url('../fonts/ubuntumono-ri-webfont.svg#ubuntu_monoitalic') format('svg');
+    font-weight: $light;
+    font-style: italic;
+}
+
+
 
 // Font Variables
 $roboto: "Roboto", "Calibri", "Arial", sans-serif;
+$ubuntu_mono: "ubuntu_mono", "Calibri", "Arial", sans-serif;

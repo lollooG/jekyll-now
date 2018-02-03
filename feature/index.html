@@ -1,0 +1,7 @@
+---
+layout: index
+title: Featuring Posts
+---
+{% for post in site.categories["featuring"] %}
+    {% include article_index.html %}
+{% endfor %}
