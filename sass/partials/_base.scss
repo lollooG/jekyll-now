@@ -1,17 +1,17 @@
 // Shortcuts
 $noborder: 0px solid transparent;
-$line: 1px solid $sand;
+$line: 2px solid $4chanyo_bg;
 
 // Settings
 //---------------------------------------------
 // General
 $main_font-family: $ubuntu_mono;
 $main_font-weight: $light;
-$body_bg-color: $white;
-$body_bg-img: url(/img/mybackground_fin.jpg); // adjust if you use baseurl, place this before as it will not automatically be added
+$body_bg-color: $my_pink;
+$body_bg-img: ; // adjust if you use baseurl, place this before as it will not automatically be added
 $main_color: $darkgray;
-$root_font_size: 24px;
-$general_line-height: 1.3;
+$root_font_size: 18px;
+$general_line-height: 1.1;
 
 $sidebarcollapse: 950px;
 
@@ -24,7 +24,7 @@ $h_text_transform: none;
 // MyCustome
 $header_bg-img: url(/img/header.jpg);
 $lineheight_h: 90%;
-$lineheight_p: 88%;
+$lineheight_p: 95%;
 
 // Links
 $a_color: $mydarkblue;
@@ -50,7 +50,7 @@ $so_color: black;
 
 // Menu
 $mainnav_collapse: 1068px;
-$mainnav_bg: $white;
+$mainnav_bg: rgba(white, .7);
 $mainnav_border: $line;
 $mainnav_text-transform: uppercase;
 $mainnav_a_color: $a_color;
