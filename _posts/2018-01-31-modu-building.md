@@ -13,7 +13,7 @@ https://www.highend3d.com/maya/script/render-ready-demo-for-maya
 
 It is a very well written script, but unfortunately the author has stop updating it for newer Maya. Also there are limitations in the software that I dislike (mostly because I am using a different renderer), I prefer tools with more freedom. So I decide to write my own.
 
-![result overview]({{site.url}}/img/modu_building/ui.jpg ){: .center-image }
+![UI display]({{ site.baseurl | replace: '//', '/' }}/img/modu_building/ui.jpg ){: .center-image }
 
 So on the left side I have the finished script UI. In principle, this script is basically just a duplicator. User can put a mesh or a mesh group name into the "object name" field in the top left side, which will link to the "Module Name" on the left side. And in the main table below, I can use these modules to one by one build the building.
 
