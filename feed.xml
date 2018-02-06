@@ -10,8 +10,9 @@
 				<title>Simple Facial Rigging and Walk Cycle Demo</title>
 				
 				
-					<description>&lt;p&gt;I did a quick facial animation and walk cycle with Maya and Renderman.&lt;/p&gt;
-
+					<description>&lt;p&gt;I did a quick facial animation and walk cycle with Maya and Renderman.
+&lt;br /&gt;&lt;br /&gt;
+Facial rigging is done with my own script and the walk cycle is used to demonstrate different layers within this character.&lt;/p&gt;
 </description>
 				
 				<pubDate>Wed, 31 Jan 2018 00:00:00 -0800</pubDate>
@@ -150,7 +151,8 @@ As a result, I wrote my own method. First, I copied the face mesh using it as bl
 				<title>My throughts on extrude along curve</title>
 				
 				
-					<description>&lt;p&gt;Creating Stairs is one of the most tedious task in 3D modeling. There are a lot of repetition in the modeling and everything has been very precise. In the end, I found out that the fastest way of building stairs is first build a curve, and than extrude along the curve to build handrails and other supporting structures. This is by far the fastest way of building stairs.&lt;/p&gt;
+					<description>&lt;p&gt;Creating Stairs is one of the most tedious task in 3D modeling. There are a lot of repetition in the modeling and everything has been very precise. In the end, I found out that the fastest way of building stairs is first build a curve, and than extrude along the curve to build handrails and other supporting structures. This is by far the fastest way of building stairs.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 </description>
 				
