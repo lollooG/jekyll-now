@@ -48,12 +48,6 @@
                 <li class="parent"><a href="#">View Category</a>
                     <ul>
                         
-                            <li><a href="/category/image" >image(2)</a></li>
-                        
-                            <li><a href="/category/standard" >standard(1)</a></li>
-                        
-                            <li><a href="/category/audio" >audio(1)</a></li>
-                        
                             <li><a href="/category/maya" >maya(1)</a></li>
                         
                             <li><a href="/category/rigging" >rigging(1)</a></li>
@@ -70,16 +64,6 @@
                 </li>
                 <li class="parent"><a href="#">View Tag</a>
                     <ul>
-                        
-                            <li><a href="/tag/gallery" >gallery(2)</a></li>
-                        
-                            <li><a href="/tag/image" >image(2)</a></li>
-                        
-                            <li><a href="/tag/text" >text(1)</a></li>
-                        
-                            <li><a href="/tag/music" >music(1)</a></li>
-                        
-                            <li><a href="/tag/soundcloud" >soundcloud(1)</a></li>
                         
                             <li><a href="/tag/modeling" >modeling(4)</a></li>
                         
@@ -181,18 +165,6 @@ SimpleJekyllSearch({
             
                 
                     
-                        <li><a href="/category/image" style="font-size: .7em">image (2) </a></li>
-                    
-                
-                    
-                        <li><a href="/category/standard" style="font-size: .7em">standard (1) </a></li>
-                    
-                
-                    
-                        <li><a href="/category/audio" style="font-size: .7em">audio (1) </a></li>
-                    
-                
-                    
                         <li><a href="/category/maya" style="font-size: .7em">maya (1) </a></li>
                     
                 
@@ -223,16 +195,6 @@ SimpleJekyllSearch({
         <ul class="tag_list">
             
             
-                
-                    <li><a href="/tag/gallery" style="font-size: .7em">gallery (2) </a></li>
-                
-                    <li><a href="/tag/image" style="font-size: .7em">image (2) </a></li>
-                
-                    <li><a href="/tag/text" style="font-size: .7em">text (1) </a></li>
-                
-                    <li><a href="/tag/music" style="font-size: .7em">music (1) </a></li>
-                
-                    <li><a href="/tag/soundcloud" style="font-size: .7em">soundcloud (1) </a></li>
                 
                     <li><a href="/tag/modeling" style="font-size: .7em">modeling (4) </a></li>
                 
@@ -336,25 +298,27 @@ SimpleJekyllSearch({
                         </div>
                         
                         <div class="post_content">
-                            <p>Overview:
-I wrote a script that run in mayapy. It can convert photos into seamless tile. The quality of the result will obviously depended on the original image. Some images are just not made for seamless texture. The program itself is using a algorithm, minimal error boundary. The algorithm is a variation of another more famous algorithm called, seam curving. Seam curving is covered in most university level computer vision programming classes. It is almost a rite of passage for any programmer in the field of graphic or image editing. And because the algorithm uses dynamic programming. some advance programming courses will also use it as assignment or project.</p>
-
-<p><img src="http://localhost:4000/img/seamless_script/ui.jpg" alt="result overview" class="center-image" /></p>
-
-<p>What is Seamless texture?
-Seamless image, basically means the left side of the image matches the right side of the image. Same with the top and bottom side. This is useful because in a modeler may want to cover a large geometry with the same repeating textures.</p>
-
-<p><img src="http://localhost:4000/img/seamless_script/leave_tile_expl.jpg" alt="result overview" class="center-image" /></p>
-
-<p>My method:
-As the picture shown, the trick is overlapping the left and right part of the image. And to find the best seam to combine the image I am using the algorithm I mentioned above. To understand the algorithm I include this link for more detail.
+                            <h1 id="overview"><strong>Overview:</strong></h1>
+<p>I wrote a script that run in mayapy. It can convert photos into seamless tile. The quality of the result will obviously depended on the original image. Some images are just not made for seamless texture. The program itself is using a algorithm, minimal error boundary. The algorithm is a variation of another more famous algorithm called, seam curving. Seam curving is covered in most university level computer vision programming classes. It is almost a rite of passage for any programmer in the field of graphic or image editing. And because the algorithm uses dynamic programming. some advance programming courses will also use it as assignment or project.
+<br /><br />
+<img src="/img/seamless_script/ui.jpg" alt="eamless_script UI" class="center-image" />
+<br /><br /></p>
+<h1 id="what-is-seamless-texture"><strong>What is Seamless texture?</strong></h1>
+<p>Seamless image, basically means the left side of the image matches the right side of the image. Same with the top and bottom side. This is useful because in a modeler may want to cover a large geometry with the same repeating textures.
+<br /><br />
+<img src="/img/seamless_script/leave_tile_expl.jpg" alt="leave_tile" class="center-image" />
+<br /><br /></p>
+<h1 id="my-method"><strong>My method:</strong></h1>
+<p>As the picture shown, the trick is overlapping the left and right part of the image. And to find the best seam to combine the image I am using the algorithm I mentioned above. To understand the algorithm I include this link for more detail.
+<br />
 To make the image both vertical and horizontal seamless, I rotate the image and ran the same process again.
-Also, I included a check box in my UI to center the image. What it means is that do I preserve the original center of the original image. As you can see, the way I merge my image will split the center of the original image. In some case, user may still want to persevere center, so I offered the option to center it.</p>
-
-<p><img src="http://localhost:4000/img/seamless_script/method.jpg" alt="result overview" class="center-image" /></p>
-
-<p>Operation Demo:
-link to video</p>
+<br />
+Also, I included a check box in my UI to center the image. What it means is that do I preserve the original center of the original image. As you can see, the way I merge my image will split the center of the original image. In some case, user may still want to persevere center, so I offered the option to center it.
+<br /><br />
+<img src="/img/seamless_script/method.jpg" alt="method explain" class="center-image" />
+<br /><br />
+Operation Demo:
+<a href="http://">link to video</a></p>
 
                         </div>
                         
@@ -380,6 +344,35 @@ link to video</p>
                         </div>
                         
                     </article>
+
+                    
+
+                    <div id="disqus_thread"></div>
+                    
+					<script>
+					    /**
+					     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+					     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+					     */
+					    /*
+					    var disqus_config = function () {
+					        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+					        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+					    };
+					    */
+					    (function() {  // DON'T EDIT BELOW THIS LINE
+					        var d = document, s = d.createElement('script');
+					        
+					        s.src = 'https://lolloo.disqus.com/embed.js';
+					        
+					        s.setAttribute('data-timestamp', +new Date());
+					        (d.head || d.body).appendChild(s);
+					    })();
+					</script>
+					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+                    
+
                     <div class="post_nav">
                         
                         <a class="prev" href="/post/renderman-geo-light/"><i class="fa fa-angle-left"></i><span class="short"> prev</span><span class="long">ious post</span></a>

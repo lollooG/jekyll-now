@@ -46,38 +46,6 @@
       "tags"     : "modeling, maya",
       "url"      : "/post/extrude-curve/",
       "date"     : "2018-01-31 00:00:00 -0800"
-    } ,
-  
-    {
-      "title"    : "Audio",
-      "category" : "audio",
-      "tags"     : "music, soundcloud",
-      "url"      : "/post/audio/",
-      "date"     : "2015-02-08 00:00:00 -0800"
-    } ,
-  
-    {
-      "title"    : "Gallery",
-      "category" : "image",
-      "tags"     : "gallery, image",
-      "url"      : "/post/gallery/",
-      "date"     : "2015-02-06 00:00:00 -0800"
-    } ,
-  
-    {
-      "title"    : "Full Width Post",
-      "category" : "standard",
-      "tags"     : "text",
-      "url"      : "/post/standard-full/",
-      "date"     : "2015-02-05 00:00:00 -0800"
-    } ,
-  
-    {
-      "title"    : "Gallery Alternative",
-      "category" : "image",
-      "tags"     : "gallery, image",
-      "url"      : "/post/gallery-alt/",
-      "date"     : "2015-02-01 00:00:00 -0800"
     } 
   
 ]
