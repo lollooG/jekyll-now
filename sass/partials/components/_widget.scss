@@ -19,12 +19,13 @@
 
         li{
             padding-left: 0px;
+            font-size: 1.3em;
 
-	    &:hover{
-            	> a{
-	       	    font-weight: bold;
-            	    color: $mainnav_a_hover;
-            	}
+            &:hover{
+                > a{
+                font-weight: bold;
+                    color: $mainnav_a_hover;
+                }
             }
         }
     }

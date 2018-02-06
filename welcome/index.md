@@ -1,12 +1,12 @@
 ---
-layout: page
-featimg: 8.jpg
 title: Welcome to my website
+layout: page
 ---
-## This is a static page
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatibus, assumenda perspiciatis vel eos, molestias nisi cum accusantium commodi amet modi repellendus. Nostrum iure fugiat ducimus quae nesciunt distinctio ullam.
-
-Modi consequuntur, ex, quod optio perferendis delectus libero excepturi recusandae, odio earum consectetur obcaecati repellat atque natus dignissimos quidem laboriosam nisi est? Hic ex ullam aspernatur perferendis doloremque odit eius nostrum cumque repudiandae sapiente culpa voluptate qui quasi, nulla dolorum facilis ab.
-
-Excepturi atque fuga illum fugiat consequatur, obcaecati, quaerat voluptatibus! Consequuntur ut dolore impedit magni officiis a voluptatibus odio, assumenda obcaecati illo reprehenderit veniam totam dolorem optio iure eius corporis aspernatur inventore quia perspiciatis placeat ratione repellat! Voluptatem.
+**This is my personal website, I use it to post my personal projects.**
+**Any is welcome to comment or contact me**
+<br/><br/><br/>
+First, what kind of website is this? This is a static website, hosted on github page. To make this website run better, I uses paginater, sass, disqus and many other plugins. This website is written within one week, but I will continuously improve the UI. 
+<br/><br/>
+I will post projects or findings I am doing on this website. It will mostly be on 3D animations, graphics and image processing. But I will also post about subjects that interested me on this website. So in order to deliver the content viewers wants to see, I created two filters category and tag. Viewer can access the tags or categories via navigation tab or the lefthand sidebar. If viewers cannot see the lefthand sidebar, it's because the the window width is too narrow to show it. Also noticed that if you find any errors or problems with this website, please feel free to contact me.
+<br/><br/>

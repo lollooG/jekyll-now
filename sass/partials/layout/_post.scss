@@ -1,5 +1,5 @@
 .content_container{
-    width: 75%;
+    width: 80%;
 
     @media screen and (max-width: $sidebarcollapse){
         width: 100%;
@@ -10,39 +10,54 @@
     }
 
     .post_title{
-        color: $title_color;
-        padding: 10px 0;
+        color: $a_color;
+        padding: 25px 0px 2px;
+        font-size: 2.5em;
     }
 
     .meta{
-        margin: 20px 0;
-        padding: 10px 0;
+        margin: 2px 10px;
+        padding: 2px 0px 45px;
         border-top: $box_line;
         border-bottom: $box_line;
     }
 
     .featsection{
-        margin: 10px 0;
+        margin: 20px 0px;
+    }
+
+    .post_content{
+        width: 92%;
+        @extend %center;
+        font-size: 1.2em;
+        line-height: 2;
     }
 
     .catsandtags{
-        margin: 5px 0;
-        padding: 5px 0;
+        margin: 5px 0px;
+        padding: 5px 0px;
         border-top: $box_line;
         border-bottom: $box_line;
-        line-height: 2.5;
+        line-height: 1.5;
 
-        .category,
+        .category,{
+            margin: 15px 0px 3px;
+            padding: 5px 0px;
+            background: $lightgray;
+        }
         .tags{
+            margin: 3px 0px 15px;
+            padding: 5px 0px;
+            background: $lightgray;
             .name{
                 font-weight: $medium;
-                padding: 3px;
+                padding: 0px;
             }
         }
 
         a{
-            padding: 2px;
-            background: $box_bg;
+            padding: 0px;
+            background: $mediumgray;
             border: $box_line;
         }
     }

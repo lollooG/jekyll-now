@@ -1,5 +1,5 @@
 .sidebar{
-    width: calc(23% - 20px);
+    width: calc(18% - 20px);
 
     @media screen and (max-width: $sidebarcollapse){
         width: 100%;
@@ -11,7 +11,7 @@
 
 	.title{
 	    width: 100%;
-	    font-size: 0.7em;
-            text-align: left;
+	    font-size: 1.1em;
+        text-align: left;
 	}
 }
