@@ -24,12 +24,12 @@ So the next step is to export the mocap skeleton, which can be done by ni-mate m
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div style=&quot;display:block; position:relative; display:block; margin:auto; min-width:200px; height: auto&quot;&gt;
 	
-    &lt;video style=&quot;display:block; width:100%; height:auto&quot; controls=&quot;&quot; loop=&quot;loop&quot;&gt;
-        &amp;lt;source src=&quot;&quot;+&quot;/&quot;+&quot;img/mocap_step_01/setp_01.webm&quot; type=&quot;video/webm&quot; /&amp;gt;
+    &lt;video style=&quot;display:block&quot; controls=&quot;&quot; loop=&quot;loop&quot;&gt;
+        &lt;source src=&quot;//img/mocap_step_01/setp_01.webm&quot; type=&quot;video/webm&quot; /&gt;
     &lt;/video&gt;
 	
     &lt;!--
-    &lt;iframe src=&quot;/img/mocap_step_01/setp_01.webm&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/mocap_step_01/setp_01.webm&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
     --&gt;
 &lt;/div&gt;
 
