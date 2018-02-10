@@ -52,9 +52,9 @@
                         
                             <li><a href="/category/rigging" >rigging(1)</a></li>
                         
-                            <li><a href="/category/script" >script(2)</a></li>
+                            <li><a href="/category/script" >script(3)</a></li>
                         
-                            <li><a href="/category/featuring" >featuring(3)</a></li>
+                            <li><a href="/category/featuring" >featuring(4)</a></li>
                         
                             <li><a href="/category/renderman" >renderman(1)</a></li>
                         
@@ -67,7 +67,7 @@
                         
                             <li><a href="/tag/modeling" >modeling(4)</a></li>
                         
-                            <li><a href="/tag/maya" >maya(5)</a></li>
+                            <li><a href="/tag/maya" >maya(6)</a></li>
                         
                             <li><a href="/tag/rigging" >rigging(2)</a></li>
                         
@@ -81,13 +81,15 @@
                         
                             <li><a href="/tag/texture" >texture(1)</a></li>
                         
-                            <li><a href="/tag/script" >script(1)</a></li>
+                            <li><a href="/tag/script" >script(2)</a></li>
                         
                             <li><a href="/tag/youtube" >youtube(1)</a></li>
                         
                             <li><a href="/tag/rendering" >rendering(1)</a></li>
                         
                             <li><a href="/tag/VFX" >VFX(1)</a></li>
+                        
+                            <li><a href="/tag/motion capture" >motion capture(1)</a></li>
                         
                     </ul>
                 </li>
@@ -173,7 +175,7 @@ SimpleJekyllSearch({
                     
                 
                     
-                        <li><a href="/category/script" style="font-size: .7em">script (2) </a></li>
+                        <li><a href="/category/script" style="font-size: .7em">script (3) </a></li>
                     
                 
                     
@@ -198,7 +200,7 @@ SimpleJekyllSearch({
                 
                     <li><a href="/tag/modeling" style="font-size: .7em">modeling (4) </a></li>
                 
-                    <li><a href="/tag/maya" style="font-size: .7em">maya (5) </a></li>
+                    <li><a href="/tag/maya" style="font-size: .7em">maya (6) </a></li>
                 
                     <li><a href="/tag/rigging" style="font-size: .7em">rigging (2) </a></li>
                 
@@ -212,13 +214,15 @@ SimpleJekyllSearch({
                 
                     <li><a href="/tag/texture" style="font-size: .7em">texture (1) </a></li>
                 
-                    <li><a href="/tag/script" style="font-size: .7em">script (1) </a></li>
+                    <li><a href="/tag/script" style="font-size: .7em">script (2) </a></li>
                 
                     <li><a href="/tag/youtube" style="font-size: .7em">youtube (1) </a></li>
                 
                     <li><a href="/tag/rendering" style="font-size: .7em">rendering (1) </a></li>
                 
                     <li><a href="/tag/VFX" style="font-size: .7em">VFX (1) </a></li>
+                
+                    <li><a href="/tag/motion capture" style="font-size: .7em">motion capture (1) </a></li>
                 
             
             
@@ -301,7 +305,7 @@ SimpleJekyllSearch({
                             <p>Creating Stairs is one of the most tedious task in 3D modeling. There are a lot of repetition in the modeling and everything has been very precise. In the end, I found out that the fastest way of building stairs is first build a curve, and than extrude along the curve to build handrails and other supporting structures. This is by far the fastest way of building stairs.
 <br /><br /></p>
 
-<center>![result for different extrudes](/img/extu_idea/extu_crv.jpg )</center>
+<center>Compare different extrudes</center>
 <p><img src="/img/extu_idea/extu_crv.jpg" alt="result for different extrudes" class="center-image" />
 <br /><br />
 There is also some experience I gained when using the extrude along curve Maya function. At first, I found the rebuild curve function is very useful when I was trying to preserve bend volume. See orange circles. 
@@ -312,6 +316,7 @@ The uniform rebuild curve has the best bend compare to the other two curves. But
 There is a hidden( for me at least ) property on any NURB curve, I will called it parameter weight. Parameter is not just the percentage of length as one might believed. For example, when I use the extrude along curve function, It will check how many divisions the user wants and divide the parameter base on this division. But the parameter is not uniformly distributed along the length, the parameter weights more if I draw more CV/EP points, vise versa.
 <br /><br /></p>
 
+<center>The effect of rebuild curve</center>
 <p><img src="/img/extu_idea/rebuild_crv.jpg" alt="result for extruding rebuild curves" class="center-image" /></p>
 
 <p><br /><br /></p>

@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Cheapest Mocap Solution, Step 1",
+      "category" : "scriptfeaturing",
+      "tags"     : "script, maya, motion capture",
+      "url"      : "/post/cheap-mocap-01/",
+      "date"     : "2018-02-09 00:00:00 -0800"
+    } ,
+  
+    {
       "title"    : "Simple Facial Rigging and Walk Cycle Demo",
       "category" : "demofeaturing",
       "tags"     : "youtube, rigging, rendering, modeling, VFX, renderman",

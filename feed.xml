@@ -7,6 +7,50 @@
 		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Cheapest Mocap Solution, Step 1</title>
+				
+				
+					<description>&lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+There are a lot of motion capture options on the markets right now, but for individual hobby level motion capture, the choice is limited. For example there are Kinect, PS move, OptiTrack… But all of these options will involve another 3 party software to make them mocap capable, which is another few hundred dollars out of my pocket. 
+&lt;br /&gt;&lt;br /&gt;
+In the end, after trying out few dozens different methods. The cheapest mocap solution is to use one single Kinect, ni-mate and write the rest of the code myself. So for step one, I included the the ni-mate and Kinect setup and export the mocap result into maya.
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;the-test&quot;&gt;the test&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+To optimize the result, I uses a home made LED rig to light myself up as bright as possible. Open ni-mate and start adjusting it. The result is promising. There are some accuracy issue, for example, the hip and chest following is not as responsive as I like it to be. Also the system have a hard time detecting rotation. But all of these are hardware issues that came with using Kinect. The bottle neck of using this method is Kinect and not the software. But at hobby level, this is best result I can hope for.
+&lt;br /&gt;&lt;br /&gt;
+So the next step is to export the mocap skeleton, which can be done by ni-mate maya plug-in.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div style=&quot;display:block; position:relative; display:block; margin:auto; min-width:200px; height: auto&quot;&gt;
+	
+    &lt;video style=&quot;display:block; width:100%; height:auto&quot; controls=&quot;&quot; loop=&quot;loop&quot;&gt;
+        &amp;lt;source src=&quot;&quot;+&quot;/&quot;+&quot;img/mocap_step_01/setp_01.webm&quot; type=&quot;video/webm&quot; /&amp;gt;
+    &lt;/video&gt;
+	
+    &lt;!--
+    &lt;iframe src=&quot;/img/mocap_step_01/setp_01.webm&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+    --&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;challenges&quot;&gt;Challenges&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+Here I ran into some problem, before I got it working. Ni-mate have a issue of exporting to many data to maya, which is not explained in the official document. What happened is the whole pipeline will froze and stop transferring any mocap data into maya. 
+&lt;br /&gt;&lt;br /&gt;
+The solution is a little underwhelming, I just excluded my fingers’ mocap data, since it is non-usable anyway. And to my surprise, everything turned out OK after that, I was comfortability recording mocap data in Maya.
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;next-step&quot;&gt;Next Step&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+Here is where the hard-work starts, the mocap data right now are raw rotation and translation in the form a locater. To use these data, I need to write the script to build a skeleton to fit the mocap data. And  another script to transfer movement into my own animation.&lt;/p&gt;
+</description>
+				
+				<pubDate>Fri, 09 Feb 2018 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/post/cheap-mocap-01/</link>
+				<guid isPermaLink="true">http://localhost:4000/post/cheap-mocap-01/</guid>
+			</item>
+		
+			<item>
 				<title>Simple Facial Rigging and Walk Cycle Demo</title>
 				
 				
