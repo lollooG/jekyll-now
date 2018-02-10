@@ -1,7 +1,7 @@
 <div style="display:block; position:relative; display:block; margin:auto; min-width:200px; height: auto" >
 	
-    <video  style="display:block; width:100%; height:auto" controls loop="loop">
-        <source src="{{ site.baseurl | replace: '//', '/'}}"+"/"+"{{ include.param }}" type="video/webm" />
+    <video  style="display:block" controls loop="loop">
+        <source src="{{ site.baseurl | replace: '//', '/' }}/{{ site.media_folder | replace: '//', '/'}}/{{ include.param }}" type="video/webm" />
     </video>
 	
     <!--
