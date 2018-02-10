@@ -1,0 +1,10 @@
+<div style="display:block; position:relative; display:block; margin:auto; min-width:200px; height: auto" >
+	
+    <video  style="display:block; width:100%; height:auto" controls loop="loop">
+        <source src="{{ site.baseurl | replace: '//', '/'}}"+"/"+"{{ include.param }}" type="video/webm" />
+    </video>
+	
+    <!--
+    <iframe src="{{ site.baseurl | replace: '//', '/' }}/{{ include.param }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    -->
+</div>
